@@ -155,11 +155,32 @@ header.sticky{
 .row img:hover{
     transform: scale(0.9);
 }
+.promos{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.promos h1{
+    font-size: 38px;
+}
 .contact{
-    background-color: #f3f4f6;
+    
+    height: 100vh;
 }
 .info img{
-    margin-top: 70px;
+    margin-top: 2%;
     width: 160px;
     height: auto;
+}
+.social-icon i{
+    color: #565656;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+.social-icon i:hover{
+    transform: scale(1.3);
 }
