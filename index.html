@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
-        <h1>My Online Store</h1>
-    </header>
-    <main> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <h1>My Online Store</h1> 
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
             <li><a href="#About">About Us</a></li>
-            <li><a href="#Products">Products</a></li>
+            <li><a href="#Prod">Products</a></li>
             <li><a href="#Promos">Promos</a></li>
             <li><a href="#Contact">Contact Us</a></li>
         </ul>
-        <hr>
-        <article = id="About">
-            <h1>
-                About
-                <b>FINFINITY</b>
-            </h1>
+    </header>
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Popular Now</h5>
+            <h1>New Fish</h1>
+            <a href="#Prod" class="main-btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <div class="down-arrow">
+            <a href="#About" class="down"><i class='bx bx-down-arrow-alt' ></i></a>
+        </div>
+    </section>
+
+        <article id="About">
+            
+                <div class="info">
+                    <img src="Images/logo.jpg" alt=""> </div>
+                    <div class="title">
+                        <h2>FINFINITY</h2>
+                    </div>
             <section>
                 <p>Welcome to <b>FINFINITY</b>, your premier online destination for all things aquatic! Dive into a world of vibrant colors, graceful movements, and serene beauty as you explore our extensive collection of aquatic life. At <b>FINFINITY</b>, we pride ourselves on offering the highest quality fish and aquarium supplies to enthusiasts, beginners, and seasoned aquarists alike.
                 <br>
@@ -40,116 +62,248 @@
                 <br>
                 <br>
             </p>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
             </section>
         </article>
         <hr>
         
-        <article id="Products">
-        
-                <div>
-                    <a href="#ffish">FRESHWATER FISH</a>
+        <article id="Prod">
+            <section class="sec">
+                <div class="title">
+                    <h2>FRESHWATER FISH</h2>
                 </div>
-                <div>
-                    <a href="#sfish">SALTWATER FISH</a>
+                <div class="freshwater">
+                    <div class="row">
+                    <img src="Images/angel.jpg" alt="Angel Fish">
+                    <div class="prod-text">
+                        <h5>Angel Fish</h5></div>
+                        <div class="box">
+                            <div class="price">
+                             <h4>&#8369 80 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                       <img src="Images/guppies.jpg" alt="Guppy">
+                       <div class="prod-text">
+                        <h5>Guppies<h5>
+                        </div>
+                        <div class="box">
+                            <div class="price">
+                             <h4>&#8369 20 each</h4>
+                            </div>
+                             <buttton class="btn">Buy Now</buttton>
+                            </div>
+                    </div>
+                        <div class="row">
+                       <img src="Images/rosy-barb.jpg" alt="Rosy Barb">
+                       <div class="prod-text"><h5>Rosy Barb</h5></div>
+
+                       <div class="box">
+                        <div class="price">
+                         <h4>&#8369 50 each</h4></div>
+                         <buttton class="btn">Buy Now</buttton>
+                        
+                        </div>
                 </div>
-                <div>
-                    <a href="#supplies">AQUARIUN SUPPLIES</a>
+                        <div class="row">
+                       <img src="Images/swordtail.jpg" alt="SwordTail">
+                       <div class="prod-text"><h5>Sword Tail</h5></div>
+                       <div class="box">
+                        <div class="price">
+                         <h4>&#8369 30 each</h4></div>
+                         <buttton class="btn">Buy Now</buttton>
+                        </div>
+                    </div>
+                        <div class="row">
+                       <img src="Images/Zebrafish-Danio.jpg" alt="Danio">
+                       <div class="prod-text"><h5>Zebra Danio</h5></div>
+                       <div class="box">
+                        <div class="price">
+                         <h4>&#8369 100 each</h4></div>
+                         <buttton class="btn">Buy Now</buttton>
+                        </div>
                 </div>
-                <div id="ffish">
-                    <h1>FRESHWATER FISH</h1>
-                    <br>
-                     <h3><a href="https://www.aqueon.com/resources/care-guides/angelfish#:~:text=While%20angelfish%20are%20generally%20peaceful,hesitate%20to%20eat%20smaller%20fish." target="_blank">Angel Fish</a></h3>
-                    <img src="Images/angel.jpg" alt="Angel Fish" height="300">
-                     <figcaption style="font-weight: bold;">&#8369 50 each</figcaption>
-                     <h3><a href="https://www.treehugger.com/reasons-why-guppies-are-the-perfect-pet-4864107#:~:text=They're%20Low%2DMaintenance,%2C%20and%20they're%20happy." target="_blank">Guppies</a></h3>
-                    <img src="Images/guppies.jpg" alt="Guppy" height="300">
-                     <figcaption style="font-weight: bold;">&#8369 20 each</figcaption>
-                     <h3> <a href="https://www.thesprucepets.com/rosy-barb-1378467" target="_blank">Rosy Barb</a></h3>
-                    <img src="Images/rosy-barb.jpg" alt="Rosy" height="300">
-                     <figcaption style="font-weight: bold;">&#8369 30 each</figcaption>
-                    <h3><a href="https://www.thesprucepets.com/swordtail-fish-species-profile-5078361" target="_blank">Sword Tail</a></h3>
-                    <img src="Images/swordtail.jpg" alt="Sword Tail" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 30 each</figcaption>
-                    <h3><a href="https://www.thesprucepets.com/zebra-danio-1378473" target="_blank">Zebra Danio</a></h3>
-                    <img src="Images/Zebrafish-Danio.jpg" alt="Zebra Danio" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 25 each</figcaption>
+                    <div class="row">
+                        <img src="Images/mollies.jpg" alt="Danio">
+                        <div class="prod-text"><h5>Mollies</h5></div>
+                        <div class="box">
+                            <div class="price">
+                             <h4>&#8369 20 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                            </div>
+                    </div>
+                     <div class="row">
+                        <img src="Images/Firemouth-Cichlids.jpg" alt="Cichlid">
+                        <div class="prod-text"><h5>Cichlid</h5></div>
+                        <div class="box">
+                            <div class="price">
+                             <h4>&#8369 100 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <img src="Images/neontetra.webp" alt="Tetra">
+                            <div class="prod-text"><h5>Neon Tetra</h5></div>
+                        <div class="box">
+                            <div class="price">
+                             <h4>&#8369 40 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                        </div>
+                    </div>
                 </div>
+            </section>
                 <hr>
-                <div id="sfish">
-                    <h1>SALTWATER</h1>
-                    <br>
-                    <h3><a href="https://www.fishkeepingworld.com/clownfish/" target="_blank">Clownfish</a></h3>
-                    <img src="Salt Water/clownfish.jpg" alt="Clown Fish" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 500 each</figcaption>
-                    <h3><a href="https://www.liveaquaria.com/product/66/?pcatid=66"target="_blank">Bicolor Blenny</a></h3>
-                    <img src="Salt Water/blenny.jpg" alt="Bicolor Blenny" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 1200 each</figcaption>
-                    <h3><a href="https://www.saltyunderground.com/article/82-everything-you-need-to-know-about-banggai-cardinalfish"target="_blank">Cardinal Fish</a></h3>
-                    <img src="Salt Water/cardinalfish.jpg" alt="Cardinal Fish" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 1300 each</figcaption>
-                    <h3><a href="https://www.thesprucepets.com/cory-species-1381075"target="_blank">Cory Dora</a></h3>
-                    <img src="Salt Water/corydora.jpg" alt="Cory Dora Fish" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 1500 each</figcaption>
-                    <h3><a href="https://www.liveaquaria.com/product/193/?pcatid=193"target="_blank">Hawk Fish</a></h3>
-                    <img src="Salt Water/hawkfish-1.jpg" alt="Hawk Fish" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 2500 each</figcaption>
-                    <h3><a href="https://reefcasa.com/reef-safe-fish/yellow-clown-goby/"target="_blank">Yellow Clown Goby</a></h3>
-                    <img src="Salt Water/yellow-clown-goby-1.jpg" alt="Clown Goby Fish" height="300">
-                    <figcaption style="font-weight: bold;">&#8369 3500 each</figcaption>
-                </div>
+                <section class="sec">
+                    <div class="title">
+                        <h2>SALTWATER FISH</h2>
+                    </div>
+                    <div class="freshwater">
+                        <div class="row">
+                        <img src="Salt Water/blenny.jpg" alt="">
+                        <div class="prod-text">
+                            <h5>Bicolor Blenny</h5></div>
+                            <div class="box">
+                                <div class="price">
+                                 <h4>&#8369 3000 each</h4></div>
+                                 <buttton class="btn">Buy Now</buttton>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                           <img src="Salt Water/cardinalfish.jpg" alt="">
+                           <div class="prod-text">
+                            <h5>Cardinal Fish<h5>
+                            </div>
+                            <div class="box">
+                                <div class="price">
+                                 <h4>&#8369 1200 each</h4>
+                                </div>
+                                 <buttton class="btn">Buy Now</buttton>
+                                </div>
+                        </div>
+                            <div class="row">
+                           <img src="Salt Water/clownfish.jpg" alt="">
+                           <div class="prod-text"><h5>Clown Fish</h5></div>
+                           <div class="box">
+                            <div class="price">
+                             <h4>&#8369 1000 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                            
+                            </div>
+                    </div>
+                            <div class="row">
+                           <img src="Salt Water/corydora.jpg" alt="Cory Dora">
+                           <div class="prod-text"><h5>Cory Dora</h5></div>
+                           <div class="box">
+                            <div class="price">
+                             <h4>&#8369 1600 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                            </div>
+                        </div>
+                            <div class="row">
+                           <img src="Salt Water/hawkfish-1.jpg" alt="Hawk Fish">
+                           <div class="prod-text"><h5>Hawk Fish</h5></div>
+                           <div class="box">
+                            <div class="price">
+                             <h4>&#8369 1500 each</h4></div>
+                             <buttton class="btn">Buy Now</buttton>
+                            </div>
+                    </div>
+                        <div class="row">
+                            <img src="Salt Water/yellow-clown-goby-1.jpg" alt="Yellow Goby">
+                            <div class="prod-text"><h5>Yellow Goby</h5></div>
+                            <div class="box">
+                                <div class="price">
+                                 <h4>&#8369 2000 each</h4></div>
+                                 <buttton class="btn">Buy Now</buttton>
+                                </div>
+                        </div>
+                    </div>
+                </section>
                 <hr>
-                <div id="supplies">
-                <h1>AQUARIUM SUPPLIES</h1>
-                <br>
-                    <h3 style="color: blue;">Tanks</h3>
-                    <img src="AquariumSupplies/aquarium tank.webp" alt="Aquarium Tank" height="300">
-                    <figcaption style="font-weight: bold;">Price Varries on Size</figcaption>
-                    <h3 style="color: blue;">Decorations</h3>
-                    <img src="AquariumSupplies/decors.jpg" alt="Aquarium Decorations" height="300">
-                    <figcaption style="font-weight: bold;">Price Varries on Size and Type</figcaption>
-                    <h3 style="color: blue;">Filters</h3>
-                    <img src="AquariumSupplies/filters.webp" alt="Aquarium Filters" height="300">
-                    <figcaption style="font-weight: bold;">Price Varries on Size and Type</figcaption>
-                    <h3 style="color: blue;">Heater</h3>
-                    <img src="AquariumSupplies/heater.jpg" alt="Aquarium Heater" height="300">
-                    <figcaption style="font-weight: bold;">Price Varries on Size and Type</figcaption>
-                    <h3 style="color: blue;">Lights</h3>
-                    <img src="AquariumSupplies/lights.jpg" alt="Aquarium Light" height="300">
-                    <figcaption style="font-weight: bold;">Price Varries on Size and Type</figcaption>
+                <section class="sec">
+                    <div class="title">
+                        <h2>AQUARIUM SUPPLIES</h2>
+                    </div>
+                    <div class="freshwater">
+                        <div class="row">
+                        <img src="AquariumSupplies/aquarium tank.webp" alt="">
+                        <div class="prod-text">
+                            <h5>Glass Tank</h5></div>
+                            <div class="box">
+                                 <buttton class="btn">Buy Now</buttton>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <img src="AquariumSupplies/decors.jpg" alt="">
+                           <div class="prod-text">
+                            <h5>Decorations<h5>
+                            </div>
+                            <div class="box">
+                                 <buttton class="btn">Buy Now</buttton>
+                            </div>
+                        </div>
+                            <div class="row">
+                           <img src="AquariumSupplies/filters.webp" alt="">
+                           <div class="prod-text"><h5>Filters</h5></div>
+                           <div class="box">
+                             <buttton class="btn">Buy Now</buttton>
+                            
+                            </div>
+                        </div>
+                            <div class="row">
+                           <img src="AquariumSupplies/heater.jpg" alt="">
+                           <div class="prod-text"><h5>Heater</h5></div>
+                           <div class="box">
+                             <buttton class="btn">Buy Now</buttton>
+                            </div>
+                        </div>
+                            <div class="row">
+                           <img src="AquariumSupplies/lights.jpg" alt="">
+                           <div class="prod-text"><h5>Led Lights</h5></div>
+                           <div class="box">
+                             <buttton class="btn">Buy Now</buttton>
+                        </div>
+                    </div>
                 </div>
+            </section>
                 
         </article>
         <hr>
         <article id="Promos">
         <h1>Our Store Offers:</h1>
-        <h2>Free Maintenance Service</h2>
+        <br>
+        <h3>Free Maintenance Service</h3>
         <p>Our store offers a free maintenance service visit after purchasing 2000 pesos worth of fish or Aquarium supplies.</p>
-        
-        <h2>Seasonal Sales</h2>
+        <br>
+        <h3>Seasonal Sales</h3>
         <p>We offer seasonal promotions during holidays or special occasions. For instance, during the summer, the shop could offer discounts on fish suitable for outdoor ponds.</p>
-        <h2>Buy One, Get One for Free</h2>
+        <br>
+        <h3>Buy One, Get One for Free</h3>
         <p>Customers can buy one fish and get a second fish for free. For selected fish only.</p>
-        <h1>Referral Code</h1>
-        <p><b style="color: rgb(20, 122, 122);">FINFINITY2023</b>, use this referral code to avail our 30% discount.</p>
+        <br>
+        <h3>Referral Code</h3>
+        <p><b style="color: rgb(210, 33, 9);">FINFINITY2023</b>, use this referral code to avail our 30% discount.</p>
         </article>
         <hr>
         <article id="Contact">
-            <h3>If you have other questions, please contact us through the following services:</h3>
-            <p><a href="http://www.facebook.com/finfinity/">Facebook</a>
-            <br>
-            Mobile Number: 09364354709 
-            <br>
-            Email as at: finfinityandbeyond@gmail.com
-            <br>
-            </p>
+            <section class="contact">
+                <div class="info">
+                    <img src="Images/logo.jpg" alt="">
+                    <p>P-5 Ta-ao, Rojales, Carmen, Agusan del Norte</p>
+                    <p>Mobile Number: 09364354709</p>
+                    <p>finfinityandbeyond@gmail.com</p>
+                    <div class="social-icon">
+                        <a href="http://www.facebook.com/finfinity" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="http://www.twitter.com/finfinity" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                        <a href="http://www.youtube.com/finfinity" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                        <a href="http://www.instagram.com/finfinityandbeyond" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+            </section>
             
         </article>
-    </main>
+    <script src="java.js"></script>
 </body>
 </html>
-
-
